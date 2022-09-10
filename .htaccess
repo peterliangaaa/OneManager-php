@@ -3,6 +3,7 @@
 # # AllowOverride All
 RewriteEngine On
 # RewriteCond $1 !^(.well-known)
+RewriteRule ^(top|game|blog)($|/) - [L]
 RewriteRule ^(.*) index.php?/$1 [L]
 
 ###-----------------------------------
@@ -10,9 +11,9 @@ RewriteRule ^(.*) index.php?/$1 [L]
 # rewrite ^/(?!.well-known)(.*)$ /index.php?/$1 last;
 #
 ### nginx Subdirectory 在子目录中使用
-# location /OneManager2/ {
-#  rewrite ^/(.*)$ /OneManager2/index.php?/$1 last;
-# }
+#location /pan/ {
+#rewrite ^/(.*)$ /OneManager2/index.php?/$1 last;
+#}
 #
 ### caddy
 # rewrite {
