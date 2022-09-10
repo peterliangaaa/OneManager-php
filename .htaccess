@@ -6,7 +6,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # RewriteCond $1 !^(.well-known)
 
-RewriteRule ^(.*) index.php?/$1 [L]
+RewriteRule ^(.*) index.php?/$1
 RewriteRule ^(top|game|blog)($|/) - [L]
 
 ###-----------------------------------
