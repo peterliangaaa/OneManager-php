@@ -2,9 +2,12 @@
 # # LoadModule rewrite_module modules/mod_rewrite.so
 # # AllowOverride All
 RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 # RewriteCond $1 !^(.well-known)
-RewriteRule ^(top|game|blog)($|/) - [L]
+
 RewriteRule ^(.*) index.php?/$1 [L]
+RewriteRule ^(top|game|blog)($|/) - [L]
 
 ###-----------------------------------
 ### nginx
