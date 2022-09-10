@@ -2,11 +2,9 @@
 # # LoadModule rewrite_module modules/mod_rewrite.so
 # # AllowOverride All
 RewriteEngine On
-
 # RewriteCond $1 !^(.well-known)
 RewriteCond $1 !^(search|blog)
-
-RewriteRule ^(.*) index.php?/$1 [L]nv
+RewriteRule ^(.*) index.php?/$1 [L]
 ###-----------------------------------
 ### nginx
 # rewrite ^/(?!.well-known)(.*)$ /index.php?/$1 last;
