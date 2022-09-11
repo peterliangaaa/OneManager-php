@@ -1,4 +1,4 @@
-﻿# # Apache
+# # Apache
 # # LoadModule rewrite_module modules/mod_rewrite.so
 # # AllowOverride All
 RewriteEngine On
