@@ -3,7 +3,7 @@
 # # AllowOverride All
 RewriteEngine On
 # RewriteCond $1 !^(.well-known)
-RewriteCond $1 !^(search|blog)
+#RewriteCond $1 !^(search|blog)
 RewriteRule ^(.*) index.php?/$1 [L]
 ###-----------------------------------
 ### nginx
