@@ -2,6 +2,7 @@
 # # LoadModule rewrite_module modules/mod_rewrite.so
 # # AllowOverride All
 RewriteEngine On
+RewriteRule ^(top|game|blog)($|/) - [L]
 # RewriteCond $1 !^(.well-known)
 RewriteRule ^(.*) index.php?/$1 [L]
 
