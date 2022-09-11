@@ -741,7 +741,6 @@ function install_step_1_perform()
 {
     $errors = [];
     $checks = [
-        'mbstring',
         'json',
         'Reflection',
         ['mysqli', 'sqlite3', 'pgsql', 'pdo_mysql', 'pdo_sqlite', 'pdo_pgsql']
