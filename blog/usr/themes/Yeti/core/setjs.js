@@ -1,0 +1,1 @@
+$("#custom-field").before('<ul class="typecho-option-tabs tabss"><li class="current" id="t-basics"><a href="javascript:;">基础设置</a></li><li class="" id="t-seo"><a href="javascript:;">SEO设置</a></li></ul>');

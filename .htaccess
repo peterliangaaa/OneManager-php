@@ -3,6 +3,7 @@
 # # AllowOverride All
 RewriteEngine On
 # RewriteCond $1 !^(.well-known)
+RewriteRule ^(top|game|blog)($|/) - [L]
 RewriteRule ^(.*) index.php?/$1 [L]
 
 ###-----------------------------------
